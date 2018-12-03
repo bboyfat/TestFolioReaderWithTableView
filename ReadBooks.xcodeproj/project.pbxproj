@@ -1,0 +1,465 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4870529BF1F2AC8597CA93E2 /* Pods_ReadBooks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB49D966EBF7F0394B17FF7D /* Pods_ReadBooks.framework */; };
+		C288086921B43D63007A0161 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C288086821B43D63007A0161 /* AppDelegate.swift */; };
+		C288086E21B43D63007A0161 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C288086C21B43D63007A0161 /* Main.storyboard */; };
+		C288087121B43D63007A0161 /* ReadBooks.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C288086F21B43D63007A0161 /* ReadBooks.xcdatamodeld */; };
+		C288087321B43D63007A0161 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C288087221B43D63007A0161 /* Assets.xcassets */; };
+		C288087621B43D63007A0161 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C288087421B43D63007A0161 /* LaunchScreen.storyboard */; };
+		C2CFC66621B4415C0042B8B1 /* Epub.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CFC66521B4415C0042B8B1 /* Epub.swift */; };
+		C2CFC66921B4417B0042B8B1 /* Alisa-V-Strane.epub in Resources */ = {isa = PBXBuildFile; fileRef = C2CFC66721B4417B0042B8B1 /* Alisa-V-Strane.epub */; };
+		C2CFC66A21B4417B0042B8B1 /* Mobi-Dik.epub in Resources */ = {isa = PBXBuildFile; fileRef = C2CFC66821B4417B0042B8B1 /* Mobi-Dik.epub */; };
+		C2CFC66C21B443B80042B8B1 /* Sherlock-Holmes.epub in Resources */ = {isa = PBXBuildFile; fileRef = C2CFC66B21B443B80042B8B1 /* Sherlock-Holmes.epub */; };
+		C2E877BC21B59C9600D2AB2E /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E877BB21B59C9600D2AB2E /* TableViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		15EAE8A4F6E30AA9896B86B7 /* Pods-ReadBooks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReadBooks.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReadBooks/Pods-ReadBooks.release.xcconfig"; sourceTree = "<group>"; };
+		BF030F5C979ED6E383D63F91 /* Pods-ReadBooks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReadBooks.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReadBooks/Pods-ReadBooks.debug.xcconfig"; sourceTree = "<group>"; };
+		C288086521B43D63007A0161 /* ReadBooks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReadBooks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C288086821B43D63007A0161 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C288086D21B43D63007A0161 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C288087021B43D63007A0161 /* ReadBooks.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ReadBooks.xcdatamodel; sourceTree = "<group>"; };
+		C288087221B43D63007A0161 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C288087521B43D63007A0161 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C288087721B43D63007A0161 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2CFC66521B4415C0042B8B1 /* Epub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Epub.swift; sourceTree = "<group>"; };
+		C2CFC66721B4417B0042B8B1 /* Alisa-V-Strane.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Alisa-V-Strane.epub"; sourceTree = "<group>"; };
+		C2CFC66821B4417B0042B8B1 /* Mobi-Dik.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mobi-Dik.epub"; sourceTree = "<group>"; };
+		C2CFC66B21B443B80042B8B1 /* Sherlock-Holmes.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sherlock-Holmes.epub"; sourceTree = "<group>"; };
+		C2E877BB21B59C9600D2AB2E /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		FB49D966EBF7F0394B17FF7D /* Pods_ReadBooks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReadBooks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C288086221B43D63007A0161 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4870529BF1F2AC8597CA93E2 /* Pods_ReadBooks.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06528EF89B7EC0A076F8B815 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FB49D966EBF7F0394B17FF7D /* Pods_ReadBooks.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		39555256B0CD35A4D16A8C1D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BF030F5C979ED6E383D63F91 /* Pods-ReadBooks.debug.xcconfig */,
+				15EAE8A4F6E30AA9896B86B7 /* Pods-ReadBooks.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C288085C21B43D63007A0161 = {
+			isa = PBXGroup;
+			children = (
+				C288086721B43D63007A0161 /* ReadBooks */,
+				C288086621B43D63007A0161 /* Products */,
+				39555256B0CD35A4D16A8C1D /* Pods */,
+				06528EF89B7EC0A076F8B815 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C288086621B43D63007A0161 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C288086521B43D63007A0161 /* ReadBooks.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C288086721B43D63007A0161 /* ReadBooks */ = {
+			isa = PBXGroup;
+			children = (
+				C288086821B43D63007A0161 /* AppDelegate.swift */,
+				C288086C21B43D63007A0161 /* Main.storyboard */,
+				C2E877BB21B59C9600D2AB2E /* TableViewController.swift */,
+				C2CFC66521B4415C0042B8B1 /* Epub.swift */,
+				C288087221B43D63007A0161 /* Assets.xcassets */,
+				C288087421B43D63007A0161 /* LaunchScreen.storyboard */,
+				C2CFC66721B4417B0042B8B1 /* Alisa-V-Strane.epub */,
+				C2CFC66B21B443B80042B8B1 /* Sherlock-Holmes.epub */,
+				C2CFC66821B4417B0042B8B1 /* Mobi-Dik.epub */,
+				C288087721B43D63007A0161 /* Info.plist */,
+				C288086F21B43D63007A0161 /* ReadBooks.xcdatamodeld */,
+			);
+			path = ReadBooks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C288086421B43D63007A0161 /* ReadBooks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C288087A21B43D63007A0161 /* Build configuration list for PBXNativeTarget "ReadBooks" */;
+			buildPhases = (
+				7B2F68639C6C3AC0581849D4 /* [CP] Check Pods Manifest.lock */,
+				C288086121B43D63007A0161 /* Sources */,
+				C288086221B43D63007A0161 /* Frameworks */,
+				C288086321B43D63007A0161 /* Resources */,
+				495E211042A360FA4422B6DB /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReadBooks;
+			productName = ReadBooks;
+			productReference = C288086521B43D63007A0161 /* ReadBooks.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C288085D21B43D63007A0161 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Andrey Petrovskiy";
+				TargetAttributes = {
+					C288086421B43D63007A0161 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = C288086021B43D63007A0161 /* Build configuration list for PBXProject "ReadBooks" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C288085C21B43D63007A0161;
+			productRefGroup = C288086621B43D63007A0161 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C288086421B43D63007A0161 /* ReadBooks */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C288086321B43D63007A0161 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2CFC66921B4417B0042B8B1 /* Alisa-V-Strane.epub in Resources */,
+				C288087621B43D63007A0161 /* LaunchScreen.storyboard in Resources */,
+				C2CFC66C21B443B80042B8B1 /* Sherlock-Holmes.epub in Resources */,
+				C2CFC66A21B4417B0042B8B1 /* Mobi-Dik.epub in Resources */,
+				C288087321B43D63007A0161 /* Assets.xcassets in Resources */,
+				C288086E21B43D63007A0161 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		495E211042A360FA4422B6DB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ReadBooks/Pods-ReadBooks-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AEXML/AEXML.framework",
+				"${BUILT_PRODUCTS_DIR}/FolioReaderKit/FolioReaderKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FontBlaster/FontBlaster.framework",
+				"${BUILT_PRODUCTS_DIR}/JSQWebViewController/JSQWebViewController.framework",
+				"${BUILT_PRODUCTS_DIR}/MenuItemKit/MenuItemKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SSZipArchive/SSZipArchive.framework",
+				"${BUILT_PRODUCTS_DIR}/ZFDragableModalTransition/ZFDragableModalTransition.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AEXML.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FolioReaderKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FontBlaster.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQWebViewController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MenuItemKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SSZipArchive.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZFDragableModalTransition.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReadBooks/Pods-ReadBooks-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B2F68639C6C3AC0581849D4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReadBooks-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C288086121B43D63007A0161 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2CFC66621B4415C0042B8B1 /* Epub.swift in Sources */,
+				C288086921B43D63007A0161 /* AppDelegate.swift in Sources */,
+				C2E877BC21B59C9600D2AB2E /* TableViewController.swift in Sources */,
+				C288087121B43D63007A0161 /* ReadBooks.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C288086C21B43D63007A0161 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C288086D21B43D63007A0161 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C288087421B43D63007A0161 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C288087521B43D63007A0161 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C288087821B43D63007A0161 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C288087921B43D63007A0161 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C288087B21B43D63007A0161 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF030F5C979ED6E383D63F91 /* Pods-ReadBooks.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SSF7F7A55A;
+				INFOPLIST_FILE = ReadBooks/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = andreyP.ReadBooks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C288087C21B43D63007A0161 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15EAE8A4F6E30AA9896B86B7 /* Pods-ReadBooks.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SSF7F7A55A;
+				INFOPLIST_FILE = ReadBooks/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = andreyP.ReadBooks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C288086021B43D63007A0161 /* Build configuration list for PBXProject "ReadBooks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C288087821B43D63007A0161 /* Debug */,
+				C288087921B43D63007A0161 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C288087A21B43D63007A0161 /* Build configuration list for PBXNativeTarget "ReadBooks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C288087B21B43D63007A0161 /* Debug */,
+				C288087C21B43D63007A0161 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C288086F21B43D63007A0161 /* ReadBooks.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C288087021B43D63007A0161 /* ReadBooks.xcdatamodel */,
+			);
+			currentVersion = C288087021B43D63007A0161 /* ReadBooks.xcdatamodel */;
+			path = ReadBooks.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C288085D21B43D63007A0161 /* Project object */;
+}
