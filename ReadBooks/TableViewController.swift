@@ -12,7 +12,9 @@ import FolioReaderKit
 
 class TableViewController: UITableViewController {
     
-    var booksName = ["Алиса в стране чудес", "Моби-Дик","Записки о Шерлоке Холмсе"]
+    var bookGenre = ["Фэнтези", "Роман","Детектив"]
+    var bookAuthor = ["Льюис Кэрролл", "Герман Мелвилл", "Артур Конан Дойл"]
+    var booksName = ["\"Алиса в стране чудес\"", "\"Моби-Дик\"","\"Записки о Шерлоке Холмсе\""]
     var bookDetails = [Epub.bookOne, Epub.bookTwo, Epub.bookThree]
     let folioReader = FolioReader()
 
@@ -20,12 +22,14 @@ class TableViewController: UITableViewController {
         super.viewDidLoad()
         
         
-        tableView.rowHeight = 200
+        tableView.backgroundColor = #colorLiteral(red: 0.7254902124, green: 0.4784313738, blue: 0.09803921729, alpha: 1)
         
+        tableView.estimatedRowHeight = 200
+        tableView.rowHeight = UITableView.automaticDimension
        
 
         // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
+         self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
@@ -45,13 +49,13 @@ class TableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! BooksTableViewCell
         
-        cell.textLabel?.numberOfLines = 0
-        cell.textLabel?.lineBreakMode = .byWordWrapping
+        cell.bookName?.numberOfLines = 0
+        cell.bookName?.lineBreakMode = .byWordWrapping
         
         
-
+        
         
         let epub = Epub(rawValue: bookDetails[indexPath.row].rawValue)
         let bookPath = epub!.bookPath
@@ -60,14 +64,16 @@ class TableViewController: UITableViewController {
         
         do {
             let image = try FolioReader.getCoverImage(bookPath!)
-            cell.imageView?.image = image
+            cell.bookImage!.image = image
         } catch {
             print(error.localizedDescription)
         }
+        cell.bookGenre.text = bookGenre[indexPath.row]
+        cell.bookAuthor.text = bookAuthor[indexPath.row]
+        cell.bookName.text = booksName[indexPath.row]
+        cell.bookImage.clipsToBounds = true
+        cell.backgroundColor = UIColor.clear
         
-       
-        cell.textLabel?.text = booksName[indexPath.row]
-        cell.imageView?.clipsToBounds = false
         return cell
     }
  
@@ -158,13 +164,3 @@ class TableViewController: UITableViewController {
 
 }
 
-extension TableViewController{
-    
-    @IBAction func didOpen (_ sender: AnyObject){
-        guard let epub = Epub(rawValue: sender.tag) else {return}
-        
-        self.open(epub: epub)
-    }
-    
-    
-}

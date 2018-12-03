@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4870529BF1F2AC8597CA93E2 /* Pods_ReadBooks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB49D966EBF7F0394B17FF7D /* Pods_ReadBooks.framework */; };
+		C27298D821B5D090005AA5C1 /* BooksTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27298D721B5D090005AA5C1 /* BooksTableViewCell.swift */; };
 		C288086921B43D63007A0161 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C288086821B43D63007A0161 /* AppDelegate.swift */; };
 		C288086E21B43D63007A0161 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C288086C21B43D63007A0161 /* Main.storyboard */; };
 		C288087121B43D63007A0161 /* ReadBooks.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C288086F21B43D63007A0161 /* ReadBooks.xcdatamodeld */; };
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		15EAE8A4F6E30AA9896B86B7 /* Pods-ReadBooks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReadBooks.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReadBooks/Pods-ReadBooks.release.xcconfig"; sourceTree = "<group>"; };
 		BF030F5C979ED6E383D63F91 /* Pods-ReadBooks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReadBooks.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReadBooks/Pods-ReadBooks.debug.xcconfig"; sourceTree = "<group>"; };
+		C27298D721B5D090005AA5C1 /* BooksTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksTableViewCell.swift; sourceTree = "<group>"; };
 		C288086521B43D63007A0161 /* ReadBooks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReadBooks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C288086821B43D63007A0161 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C288086D21B43D63007A0161 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 			children = (
 				C288086821B43D63007A0161 /* AppDelegate.swift */,
 				C288086C21B43D63007A0161 /* Main.storyboard */,
+				C27298D721B5D090005AA5C1 /* BooksTableViewCell.swift */,
 				C2E877BB21B59C9600D2AB2E /* TableViewController.swift */,
 				C2CFC66521B4415C0042B8B1 /* Epub.swift */,
 				C288087221B43D63007A0161 /* Assets.xcassets */,
@@ -242,6 +245,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C27298D821B5D090005AA5C1 /* BooksTableViewCell.swift in Sources */,
 				C2CFC66621B4415C0042B8B1 /* Epub.swift in Sources */,
 				C288086921B43D63007A0161 /* AppDelegate.swift in Sources */,
 				C2E877BC21B59C9600D2AB2E /* TableViewController.swift in Sources */,

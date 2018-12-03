@@ -10,6 +10,11 @@ import UIKit
 
 class BooksTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var bookImage: UIImageView!
+    @IBOutlet weak var bookName: UILabel!
+    @IBOutlet weak var bookAuthor: UILabel!
+    @IBOutlet weak var bookGenre: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
